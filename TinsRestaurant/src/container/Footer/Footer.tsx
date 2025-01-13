@@ -22,11 +22,11 @@ const Footer = () => (
         <p className="p__opensans">&quot;The best way to find yourself is to lose yourself in the service of others.&quot;</p>
         <img src={ImageSpoon} className="spoon__img" style={{ marginTop: 15 }} />
         <div className="app__footer-links_icons">
-          <a href='https://www.instagram.com/tinsfood/' target="_blank" rel="noopener noreferrer">
-          <FiInstagram />
+          <a href='https://www.instagram.com/tinsfoods_/' target="_blank" rel="noopener noreferrer">
+            <FiInstagram />
           </a>
           <a href='https://www.facebook.com/tinsfood/?locale=da_DK' target="_blank" rel="noopener noreferrer">
-          <FiFacebook  />
+            <FiFacebook />
           </a>
         </div>
       </div>
