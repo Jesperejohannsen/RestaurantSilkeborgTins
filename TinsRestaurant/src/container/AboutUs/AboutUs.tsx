@@ -24,7 +24,7 @@ const AboutUs = () => (
       <div className="app__aboutus-content_history">
         <h1 className="headtext__cormorant">Vores rejse</h1>
         <img src={ImageSpoon} alt="about_spoon" className="spoon__img" />
-        <p className="p__opensans">ADet er af afgørende betydning for os at skabe autentiske vietnamesiske gastronomiske oplevelser, som vi kan være stolte af. Vores tilgang til madlavning er dybt forankret i dedikation og lidenskab, hvilket afspejles i vores hjertevarme retter. Vi stræber efter at etablere en restaurant, der indfanger essensen af hjemlig atmosfære, hvor gæsterne kan nyde en atmosfære præget af afslappethed og gæstfrihed, med særlig opmærksomhed på familiens velbefindende, herunder børnenes komfort og glæde.</p>
+        <p className="p__opensans">Det er af afgørende betydning for os at skabe autentiske vietnamesiske gastronomiske oplevelser, som vi kan være stolte af. Vores tilgang til madlavning er dybt forankret i dedikation og lidenskab, hvilket afspejles i vores hjertevarme retter. Vi stræber efter at etablere en restaurant, der indfanger essensen af hjemlig atmosfære, hvor gæsterne kan nyde en atmosfære præget af afslappethed og gæstfrihed, med særlig opmærksomhed på familiens velbefindende, herunder børnenes komfort og glæde.</p>
       </div>
     </div>
   </div>
