@@ -1,49 +1,36 @@
 import './SpecialMenu.css';
-import ImageShaker from '../../assets/menu.png';
-import ImageFoodNumberFour from '../../assets/foodImages/testImagePho.jpg';
-import ImageTea from '../../assets/foodImages/tea.jpg';
-import { SubHeading, MenuItem } from '../../components';
+import { MenuItem } from '../../components';
 
 
 const cocktails = [
   {
     title: 'Passion Rum',
-    price: '89 KR',
+    price: '95 KR',
     tags: 'Passion | Lime | Mynte | Rom',
   },
   {
-    title: "Berry Bomb",
-    price: '89 KR',
+    title: 'Berry Bomb',
+    price: '95 KR',
     tags: 'Lime | Bær | Rom | Danskvand',
   },
   {
     title: 'Moscoc Mule med et twist',
-    price: '89 KR',
+    price: '95 KR',
     tags: 'Lime | Citrongræs sirup | Gingerbeer',
   },
   {
-    title: 'Pink Lychee',
-    price: '89 KR',
-    tags: 'Vodka | Æggehvide | Litchi Sirup | Tranebær | Ananas',
-  },
-  {
-    title: 'Frozen Daiquiri',
-    price: '89 KR',
-    tags: 'Passion | Lime / Jordbær',
-  },
-  {
-    title: 'Whiskey Sour',
-    price: '89 KR',
+    title: 'Gin-Jito',
+    price: '95 KR',
     tags: 'Æggehvide | Citron | Whiskey',
   },
   {
     title: 'Gin-Jito',
-    price: '89 KR',
+    price: '95 KR',
     tags: 'Lime | Thai Basilikum | Gingerbeer',
   },
   {
     title: "Saigon Sweet'n sour",
-    price: '89 KR',
+    price: '95 KR',
     tags: 'Gin | Lime | Mynte | Kumquat',
   }
 ];
@@ -51,59 +38,58 @@ const cocktails = [
 const softDrinks = [
   {
     id: 1,
-    title: "Coca Cola/Pepsi Max/Faxe Kondi",
-    price: "35 KR",
-    tags: "25cl"
+    title: "Coca Cola/Zero",
+    price: "32 KR",
+    tags: "35 cl"
   },
   {
     id: 2,
-    title: "Økologisk Saft",
-    price: "42 KR",
-    tags: "Hyldblomst el. Ingefær/Citron, 25 cl"
+    title: "Ginger Beer",
+    price: "32 KR",
+    tags: "Caribia, 33 cl"
   },
   {
     id: 3,
-    title: "Galvanina Bio-Sodavand",
-    price: "48 KR",
-    tags: "Pink Grape, Mandarin, Ginger Beer, Danskvand, 35 cl"
+    title: "Hyldblomst Saft",
+    price: "32 KR",
+    tags: "Bornholms Mosteri, 27.5 cl"
   },
   {
     id: 4,
-    title: "Galvanina Danskvand",
-    price: "65 KR",
-    tags: "75 cl"
+    title: "Danskvand",
+    price: "32/69 KR",
+    tags: "Ramlösa, 33 eller 80 cl"
   },
   {
     id: 5,
     title: "Asiatisk Øl",
-    price: "52 KR",
+    price: "55 KR",
     tags: "Saigon el. Tiger, 33 cl"
   },
   {
     id: 6,
-    title: "Pift Øl",
-    price: "52 KR",
-    tags: "Citrus el. Mango, 50 cl"
+    title: "Kronenbourg Blanc",
+    price: "45/65 KR",
+    tags: "Fadøl, 25 el. 50 cl"
   },
   {
     id: 7,
-    title: "Kissmeyer Øl",
-    price: "55 KR",
-    tags: "Pale Ale, 33 cl"
+    title: "Angelo Poretti",
+    price: "45/65 KR",
+    tags: "Fadøl, 25 el. 50 cl"
   },
   {
     id: 8,
-    title: "Anarkist Øl",
-    price: "72 KR",
-    tags: "Bloody Weizen, New England IPA, Dobbelt IPA, 50 cl"
+    title: "Tuborg Classic",
+    price: "38/55 KR",
+    tags: "Fadøl, 25 el. 50 cl"
   },
   {
     id: 9,
-    title: "Alkoholfri Heineken",
-    price: "39 KR",
+    title: "Alkoholfri Øl",
+    price: "45 KR",
     tags: "33 cl"
   }
-
 ];
 
 const dinnerStartersMenu = [
@@ -247,83 +233,117 @@ const lunchMenu = [
   }
 ];
 
-const hotBevarages = [
+const hotBeverages = [
   {
-    id: 1,
     title: "Sort Kaffe",
     price: "30 KR",
-    tags: "Ved refill: +15 KR"
+    tags: "Ved refill: +15,-"
   },
   {
-    id: 2,
     title: "Kaffe Latte/Cappuccino",
     price: "35 KR",
     tags: ""
   },
   {
-    id: 3,
-    title: "Økologisk The",
-    price: "25 KR",
-    tags: "Pukka: LemonGrass Ginger, Three Ginger, Supreme Matcha Green, Ginseng Matcha Green, Lemon Ginger & Manuka Honey"
-  },
-  {
-    id: 4,
     title: "Kande Med The",
     price: "45 KR",
     tags: "Jasmin eller Oolong"
   }
 ];
 
-const coldBevarages = [
+const coldBeverages = [
   {
-    id: 1,
     title: "Postevand Gratis Refill",
-    price: "29 KR",
+    price: "20 KR",
     tags: ""
   },
   {
-    id: 2,
     title: "Vietnamesisk Iskaffe",
     price: "55 KR",
     tags: ""
   },
   {
-    id: 3,
     title: "Avocado Smoothie",
     price: "55 KR",
     tags: ""
   },
   {
-    id: 4,
     title: "Tins Lemonade",
     price: "55 KR",
     tags: ""
   },
   {
-    id: 5,
-    title: "Tins Iste",
-    price: "55 KR",
-    tags: ""
-  },
-  {
-    id: 6,
-    title: "Friskpresset Appelsinjuice",
+    title: "Matcha Iced Latte",
     price: "55 KR",
     tags: ""
   }
 ];
 
+const wineMenu = [
+  {
+    id: 1,
+    title: "Cava",
+    price: "69/195 KR",
+    tags: "Semi-Seco, Mousserende"
+  },
+  {
+    id: 2,
+    title: "Andantino",
+    price: "69/195 KR",
+    tags: "Garganega, Italien, Hvidvin"
+  },
+  {
+    id: 3,
+    title: "Fosche",
+    price: "255 KR",
+    tags: "Chardonnay, Piemonte, Hvidvin"
+  },
+  {
+    id: 4,
+    title: "Eimermann",
+    price: "245 KR",
+    tags: "Riesling, Tyskland, Hvidvin"
+  },
+  {
+    id: 5,
+    title: "Sancerre",
+    price: "395 KR",
+    tags: "Sancerre, Frankrig, Hvidvin"
+  },
+  {
+    id: 6,
+    title: "Andantino",
+    price: "69/195 KR",
+    tags: "Sangiovese, Italien, Rødvin"
+  },
+  {
+    id: 7,
+    title: "Light Horse",
+    price: "295 KR",
+    tags: "Pinot Noir, USA, Rødvin"
+  },
+  {
+    id: 8,
+    title: "Valpolicella",
+    price: "245 KR",
+    tags: "Italien, Rødvin"
+  },
+  {
+    id: 9,
+    title: "Amarone",
+    price: "555 KR",
+    tags: "Amarone, Italien, Rødvin"
+  }
+];
+
 const SpecialMenu = () => (
   <>
-
-
     <div className="app__specialMenu flex__center section__padding" id="menu">
       <div className="app__specialMenu-title">
         <h1 className="headtext__cormorant">Snacks</h1>
       </div>
-
       <div className="app__specialMenu-menu">
-        <div className="app__specialMenu-menu_wine  flex__center">
+        <div className="app__specialMenu-menu_wine flex__center">
           <div className="app__specialMenu_menu_items">
             {lunchMenu.map((lunchMenu, index) => (
               <MenuItem
@@ -338,17 +358,12 @@ const SpecialMenu = () => (
       </div>
     </div>
 
-
-
     <div className="app__specialMenu flex__center section__padding" id="menu">
       <div className="app__specialMenu-title">
-        <SubHeading title="Aften menu" />
-        <h1 className="headtext__cormorant">Kulinarisk oplevelse</h1>
+        <h1 className="headtext__cormorant">Forretter</h1>
       </div>
-
       <div className="app__specialMenu-menu">
-        <div className="app__specialMenu-menu_wine  flex__center">
-          <p className="app__specialMenu-menu_heading">Foretter / Salater</p>
+        <div className="app__specialMenu-menu_wine flex__center">
           <div className="app__specialMenu_menu_items">
             {dinnerStartersMenu.map((dinnerStarterMenu, index) => (
               <MenuItem
@@ -360,13 +375,15 @@ const SpecialMenu = () => (
             ))}
           </div>
         </div>
+      </div>
+    </div>
 
-        <div className="app__specialMenu-menu_img">
-          <img src={ImageFoodNumberFour} alt="menu__img" />
-        </div>
-
-        <div className="app__specialMenu-menu_cocktails  flex__center">
-          <p className="app__specialMenu-menu_heading">Hovedretter / Desert</p>
+    <div className="app__specialMenu flex__center section__padding" id="menu">
+      <div className="app__specialMenu-title">
+        <h1 className="headtext__cormorant">Hovedretter & Desert</h1>
+      </div>
+      <div className="app__specialMenu-menu">
+        <div className="app__specialMenu-menu_wine flex__center">
           <div className="app__specialMenu_menu_items">
             {dinnerMainCourseMenu.map((dinnerMainCourse, index) => (
               <MenuItem
@@ -383,32 +400,50 @@ const SpecialMenu = () => (
 
     <div className="app__specialMenu flex__center section__padding" id="menu">
       <div className="app__specialMenu-title">
-        <SubHeading title="Et udvalg af drikke" />
-        <h1 className="headtext__cormorant">Menuen der slukker tørsten</h1>
+        <h1 className="headtext__cormorant">Læskedrikke</h1>
       </div>
-
       <div className="app__specialMenu-menu">
-        <div className="app__specialMenu-menu_wine  flex__center">
-          <p className="app__specialMenu-menu_heading">Læskedrikke</p>
+        <div className="app__specialMenu-menu_wine flex__center">
           <div className="app__specialMenu_menu_items">
-            {softDrinks.map((softDrinks, index) => (
+            {softDrinks.map((softDrink, index) => (
               <MenuItem
                 key={index}
-                title={softDrinks.title}
-                price={softDrinks.price}
-                tags={softDrinks.tags}
+                title={softDrink.title}
+                price={softDrink.price}
+                tags={softDrink.tags}
               />
             ))}
           </div>
         </div>
+      </div>
+    </div>
 
-        <div className="app__specialMenu-menu_img">
-          <img src={ImageShaker} alt="menu__img" />
+    <div className="app__specialMenu flex__center section__padding" id="menu">
+      <div className="app__specialMenu-title">
+        <h1 className="headtext__cormorant">Vin</h1>
+      </div>
+      <div className="app__specialMenu-menu">
+        <div className="app__specialMenu-menu_wine flex__center">
+          <div className="app__specialMenu_menu_items">
+            {wineMenu.map((wine, index) => (
+              <MenuItem
+                key={index}
+                title={wine.title}
+                price={wine.price}
+                tags={wine.tags}
+              />
+            ))}
+          </div>
         </div>
+      </div>
+    </div>
 
-        <div className="app__specialMenu-menu_cocktails  flex__center">
-          <p className="app__specialMenu-menu_heading">Cocktails</p>
-          <p className='app__specialMenu-menu_heading'>To for 165 KR</p>
+    <div className="app__specialMenu flex__center section__padding" id="menu">
+      <div className="app__specialMenu-title">
+        <h1 className="headtext__cormorant">Cocktails</h1>
+      </div>
+      <div className="app__specialMenu-menu">
+        <div className="app__specialMenu-menu_wine flex__center">
           <div className="app__specialMenu_menu_items">
             {cocktails.map((cocktail, index) => (
               <MenuItem
@@ -424,34 +459,18 @@ const SpecialMenu = () => (
     </div>
 
     <div className="app__specialMenu flex__center section__padding" id="menu">
+      <div className="app__specialMenu-title">
+        <h1 className="headtext__cormorant">Varme Drikke</h1>
+      </div>
       <div className="app__specialMenu-menu">
-        <div className="app__specialMenu-menu_wine  flex__center">
-          <p className="app__specialMenu-menu_heading">Varme Drikke</p>
+        <div className="app__specialMenu-menu_wine flex__center">
           <div className="app__specialMenu_menu_items">
-            {hotBevarages.map((hotBevarages, index) => (
+            {hotBeverages.map((hotBevarage, index) => (
               <MenuItem
                 key={index}
-                title={hotBevarages.title}
-                price={hotBevarages.price}
-                tags={hotBevarages.tags}
-              />
-            ))}
-          </div>
-        </div>
-
-        <div className="app__specialMenu-menu_img">
-          <img src={ImageTea} alt="menu__img" />
-        </div>
-
-        <div className="app__specialMenu-menu_cocktails  flex__center">
-          <p className="app__specialMenu-menu_heading">Kolde Drikke</p>
-          <div className="app__specialMenu_menu_items">
-            {coldBevarages.map((coldBevarages, index) => (
-              <MenuItem
-                key={index}
-                title={coldBevarages.title}
-                price={coldBevarages.price}
-                tags={coldBevarages.tags}
+                title={hotBevarage.title}
+                price={hotBevarage.price}
+                tags={hotBevarage.tags}
               />
             ))}
           </div>
@@ -459,6 +478,25 @@ const SpecialMenu = () => (
       </div>
     </div>
 
+    <div className="app__specialMenu flex__center section__padding" id="menu">
+      <div className="app__specialMenu-title">
+        <h1 className="headtext__cormorant">Kolde Drikke</h1>
+      </div>
+      <div className="app__specialMenu-menu">
+        <div className="app__specialMenu-menu_wine flex__center">
+          <div className="app__specialMenu_menu_items">
+            {coldBeverages.map((coldBevarage, index) => (
+              <MenuItem
+                key={index}
+                title={coldBevarage.title}
+                price={coldBevarage.price}
+                tags={coldBevarage.tags}
+              />
+            ))}
+          </div>
+        </div>
+      </div>
+    </div>
   </>
 );
 
