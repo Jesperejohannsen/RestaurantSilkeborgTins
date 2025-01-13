@@ -1,382 +1,349 @@
 import './SpecialMenu.css';
-import ImageShaker from '../../assets/menu.png';
-import ImageFoodNumberFour from '../../assets/foodImages/testImagePho.jpg';
-import ImageTea from '../../assets/foodImages/tea.jpg';
-import { SubHeading, MenuItem } from '../../components';
+import { MenuItem } from '../../components';
 
 
 const cocktails = [
   {
     title: 'Passion Rum',
-    price: '89,-',
+    price: '95 KR',
     tags: 'Passion | Lime | Mynte | Rom',
   },
   {
-    title: "Berry Bomb",
-    price: '89,-',
+    title: 'Berry Bomb',
+    price: '95 KR',
     tags: 'Lime | Bær | Rom | Danskvand',
   },
   {
     title: 'Moscoc Mule med et twist',
-    price: '89,-',
+    price: '95 KR',
     tags: 'Lime | Citrongræs sirup | Gingerbeer',
   },
   {
-    title: 'Pink Lychee',
-    price: '89,-',
-    tags: 'Vodka | Æggehvide | Litchi Sirup | Tranebær | Ananas',
-  },
-  {
-    title: 'Frozen Daiquiri',
-    price: '89,-',
-    tags: 'Passion | Lime / Jordbær',
-  },
-  {
-    title: 'Whiskey Sour',
-    price: '89,-',
+    title: 'Gin-Jito',
+    price: '95 KR',
     tags: 'Æggehvide | Citron | Whiskey',
   },
   {
     title: 'Gin-Jito',
-    price: '89,-',
+    price: '95 KR',
     tags: 'Lime | Thai Basilikum | Gingerbeer',
   },
   {
     title: "Saigon Sweet'n sour",
-    price: '89,-',
+    price: '95 KR',
     tags: 'Gin | Lime | Mynte | Kumquat',
   }
 ];
 
-// const wineMenu = [
-//   {
-//     title: 'Cava - Dom Potier, Demi-Sec',
-//     price: '195,-',
-//     tags: 'Mousserende, Spanien'
-//   },
-//   {
-//     title: 'He Pinot Gris',
-//     price: '69/235,-',
-//     tags: 'Hvidvin, Alsace, Frankrig'
-//   },
-//   {
-//     title: 'Riesling',
-//     price: '235,-',
-//     tags: 'Hvidvin, Domaine Spielmann, Alsace, Frankrig, 2020'
-//   },
-//   {
-//     title: 'Rata Road',
-//     price: '235,-',
-//     tags: 'Hvidvin, Sauvignon Blanc, 2020, New Zealand'
-//   },
-//   {
-//     title: 'Chardonnay',
-//     price: '69/235,-',
-//     tags: 'Hvidvin, Orby, Frankrig'
-//   },
-//   {
-//     title: 'Syrah-Grenache',
-//     price: '255,-',
-//     tags: 'Rødvin, Orby, Frankrig'
-//   },
-//   {
-//     title: 'Cabernet-Syrah',
-//     price: '255,-',
-//     tags: 'Rødvin, Orby, Frankrig'
-//   },
-//   {
-//     title: 'Merlot',
-//     price: '69/235,-',
-//     tags: 'Rødvin, Chateau Castagnac, Bordeaux, Frankrig, 2019'
-//   },
-//   {
-//     title: 'Shiraz',
-//     price: '255,-',
-//     tags: 'Rødvin, First Drop, Australien, 2016'
-//   },
-//   {
-//     title: 'Rosé d’Anjou',
-//     price: '69/225,-',
-//     tags: 'Rosé, Frankrig'
-//   },
-//   {
-//     title: 'Rosé Gris de La Dune',
-//     price: '235,-',
-//     tags: 'Rosé, Frankrig'
-//   }
-// ];
-
 const softDrinks = [
   {
     id: 1,
-    title: "Coca Cola/Pepsi Max/Faxe Kondi",
-    price: "35,-",
-    tags: "25cl"
+    title: "Coca Cola/Zero",
+    price: "32 KR",
+    tags: "35 cl"
   },
   {
     id: 2,
-    title: "Økologisk Saft",
-    price: "42,-",
-    tags: "Hyldblomst el. Ingefær/Citron, 25 cl"
+    title: "Ginger Beer",
+    price: "32 KR",
+    tags: "Caribia, 33 cl"
   },
   {
     id: 3,
-    title: "Galvanina Bio-Sodavand",
-    price: "48,-",
-    tags: "Pink Grape, Mandarin, Ginger Beer, Danskvand, 35 cl"
+    title: "Hyldblomst Saft",
+    price: "32 KR",
+    tags: "Bornholms Mosteri, 27.5 cl"
   },
   {
     id: 4,
-    title: "Galvanina Danskvand",
-    price: "65,-",
-    tags: "75 cl"
+    title: "Danskvand",
+    price: "32/69 KR",
+    tags: "Ramlösa, 33 eller 80 cl"
   },
   {
     id: 5,
     title: "Asiatisk Øl",
-    price: "52,-",
+    price: "55 KR",
     tags: "Saigon el. Tiger, 33 cl"
   },
   {
     id: 6,
-    title: "Pift Øl",
-    price: "52,-",
-    tags: "Citrus el. Mango, 50 cl"
+    title: "Kronenbourg Blanc",
+    price: "45/65 KR",
+    tags: "Fadøl, 25 el. 50 cl"
   },
   {
     id: 7,
-    title: "Kissmeyer Øl",
-    price: "55,-",
-    tags: "Pale Ale, 33 cl"
+    title: "Angelo Poretti",
+    price: "45/65 KR",
+    tags: "Fadøl, 25 el. 50 cl"
   },
   {
     id: 8,
-    title: "Anarkist Øl",
-    price: "72,-",
-    tags: "Bloody Weizen, New England IPA, Dobbelt IPA, 50 cl"
+    title: "Tuborg Classic",
+    price: "38/55 KR",
+    tags: "Fadøl, 25 el. 50 cl"
   },
   {
     id: 9,
-    title: "Alkoholfri Heineken",
-    price: "39,-",
+    title: "Alkoholfri Øl",
+    price: "45 KR",
     tags: "33 cl"
   }
-
 ];
 
 const dinnerStartersMenu = [
   {
     id: 1,
-    title: "Bao",
-    tags: "Dampet hvedebolle med marineret svinekød, agurk, sylte og koriander.",
-    price: "49,-"
+    title: "BAO",
+    tags: "Dampet bolle med marineret svinekød, agurk, syltet grøntsager og koriander.",
+    price: "55 KR"
   },
   {
     id: 2,
-    title: "Chả Giò",
-    tags: "Tre hjemmelavede stegte forårsruller med svinekød og sursød sauce. (Kan fås som vegetar. Indeholder laktose.)",
-    price: "65,-"
+    title: "GỎI CUỐN",
+    tags: "To friske ruller med salat, urter og rejer, svinekød eller oksekød. Serveres med hoisinsovs (Kan fås som vegetar og glutenfri).",
+    price: "65 KR"
   },
   {
     id: 3,
-    title: "Tôm Lăn Bột",
-    tags: "Indbagte rejer m. chili mayo.",
-    price: "69,-"
+    title: "BÁNH XÈO",
+    tags: "Rispandekage med rejer, svinekød, salat og friske urter. Serveres med fiskesovs (Glutenfri. Kan fås som vegetar).",
+    price: "89 KR"
   },
   {
     id: 4,
-    title: "Hoành Thánh Chiên",
-    tags: "Stegte wonton med rejer og kylling. Serveret med satay sauce.",
-    price: "69,-"
+    title: "GYOZA",
+    tags: "4 stk pandestegte gyoza. Serveres med ponzu og ingefærsoya.",
+    price: "75 KR"
   },
   {
     id: 5,
-    title: "Gỏi Cuốn",
+    title: "GỎI CUỐN",
     tags: "Tre friske ruller med salat, urter og rejer, svinekød eller oksekød. Serveres med hoisinsaus (Kan fås som vegetar og glutenfri).",
-    price: "75,-"
+    price: "75 KR"
   },
-  {
-    id: 6,
-    title: "Bánh Xèo",
-    tags: "Rispandekage med rejer, svinekød, salat og friske urter. Serveres med fisksaus. (Glutenfri. Kan fås som vegetar)",
-    price: "89,-"
-  }
 ];
 
 const dinnerMainCourseMenu = [
   {
     id: 1,
-    title: "Phở Bò",
-    price: "109,-",
-    tags: "Oksekødsuppe med kødboller og blancheret kød. Serveres med friske urter.",
+    title: "UGENS SALAT",
+    price: "135 KR",
+    tags: "Hør tjeneren for indholdet i ugens salat. (Kan fås som glutenfri).",
   },
   {
     id: 2,
-    title: "Bún Bò Huế",
-    price: "109,-",
-    tags: "Spicy nudelsuppe med oksekød og friske urter.",
+    title: "PHỞ BÒ",
+    price: "135 KR",
+    tags: "Oksekødsuppe med risnudler, kødboller og blancheret kød. Serveres med friske urter (Kan fås som glutenfri).",
   },
   {
     id: 3,
-    title: "Bún Thịt Nướng Chả Giò",
-    price: "109,-",
-    tags: "Friske nudler med svinekød og forårsruller. (Kan fås som vegetar)",
+    title: "BÚN BÒ HUẾ",
+    price: "135 KR",
+    tags: "Spicy nudelsuppe med okse- og svinekød samt friske urter. (Glutenfri).",
   },
   {
     id: 4,
-    title: "Cơm Tấm",
-    price: "109,-",
-    tags: "Grillet svinekød med ris og vietnamesisk æggekage.",
+    title: "BÚN THỊT NƯỚNG CHẢ GIÒ",
+    price: "135 KR",
+    tags: "Friske nudler med stegte forårsruller og grillet svinekød eller stegt oksekød (Kan fås som vegetar. Indeholder laktose).",
   },
   {
     id: 5,
-    title: "Phở Xào Chay",
-    price: "109,-",
-    tags: "Stegte nudler med grøntsager, svampe og tofu.",
+    title: "CƠM THỊT NƯỚNG",
+    price: "135 KR",
+    tags: "Grillet svinekød med ris, kimchi og spejlæg.",
   },
   {
     id: 6,
-    title: "Dagens Bowl",
-    tags: "Spørg tjeneren for at høre om indholdet i dagens bowl.",
-    price: "119,-"
+    title: "PHỞ XÀO",
+    tags: "Stegte risnudler med forskellige grøntsager og svampe. Vælg mellem tofu, oksekød eller rejer.",
+    price: "135 KR"
   },
   {
     id: 7,
-    title: "Delt Måltid",
-    price: "159,- pr. person",
-    tags: "Vietnamesisk måltid sammensat af ugens råvarer. Minimum to personer. Spørg tjeneren for dagens deling.",
+    title: "BOWL",
+    price: "139 KR",
+    tags: "Spørg tjeneren for at høre om indholdet i dagens bowl. (Kan fås som glutenfri).",
   },
   {
     id: 8,
-    title: "Dagens Dessert",
-    price: "59,-",
-    tags: "Spørg tjeneren, hvad dagens dessert består af.",
+    title: "VEGETAR BOWL",
+    price: "139 KR",
+    tags: "Spørg tjeneren for indholdet i ugens vegetarret.",
   },
   {
     id: 9,
-    title: "Side Orders",
-    price: "32,-",
-    tags: "Vietnamesisk Kimchi - 32 KR. / Stegt Grønt - 39 KR. / Ekstra Kød - 15 KR.",
+    title: "BØRNERET",
+    price: "85 KR",
+    tags: "Kyllinge karaage med pomfritter af søde kartofler og mayo.",
+  },
+  {
+    id: 10,
+    title: "DEL ET MÅLTID / 195 KR. PR. PERSON",
+    tags: "Vietnamesisk måltid sammensat af forskellige retter. Minimum to personer. Spørg tjeneren for dagens deling. Fås ikke som take-way.",
+    price: ""
+  },
+  {
+    id: 11,
+    title: "DESSERT",
+    tags: "Spørg tjeneren, hvad dagens dessert består af. Frit valg af kaffe +15 KR",
+    price: "69 KR"
   }
 ];
 
 const lunchMenu = [
   {
     id: 1,
-    title: "Bánh Mì",
-    price: "59,-",
-    tags: "Vælg mellem spælæg, marineret svinekød eller oksekød"
+    title: "CHẢ GIÒ",
+    price: "65 KR",
+    tags: "Tre hjemmelavede stegte forårsruller med svinekød og sursød sauce. (Kan fås som vegetar. Indeholder laktose)."
   },
   {
     id: 2,
-    title: "Bao Bun",
-    price: "40,-",
-    tags: "Dampede bao bun med marineret svinekød"
+    title: "TÔM LĂN BỘT",
+    price: "75 KR",
+    tags: "Indbagte rejer m. chili mayo."
   },
   {
     id: 3,
-    title: "Gỏi Gà",
-    price: "80,-",
-    tags: "Kylling, kål, gulerødder, krydderurter"
+    title: "HOÀNH THÁNH CHIÊN",
+    price: "75 KR",
+    tags: "Fire hjemmelavede wonton med rejer kylling og satay sauce."
   },
   {
     id: 4,
-    title: "Stegte Ris",
-    price: "85,-",
-    tags: "Stegte ris med grøntsager og rejer"
+    title: "BÁNH PHỒNG TÔM",
+    price: "25 KR",
+    tags: "Rejechips."
   },
   {
     id: 5,
-    title: "Ris med Omelet",
-    price: "85,-",
-    tags: "Omelet med rejer og grøntsager, serveres med let grønt og soya"
+    title: "KHOAI LANG CHIÊN",
+    price: "55 KR",
+    tags: "Pomfritter af sødekartoffel med urtemayo."
   },
   {
     id: 6,
-    title: "Tins Frokosttallerken",
-    price: "99,-",
-    tags: "Med æg, paté, oksekød, pølse og sylte, serveres med brød"
+    title: "REJETOAST",
+    price: "65 KR",
+    tags: "Med chilimayo."
   }
 ];
 
-const hotBevarages = [
+const hotBeverages = [
   {
-    id: 1,
     title: "Sort Kaffe",
-    price: "30,-",
-    tags: "Ved refill: +15 KR"
+    price: "30 KR",
+    tags: "Ved refill: +15,-"
   },
   {
-    id: 2,
     title: "Kaffe Latte/Cappuccino",
-    price: "35,-",
+    price: "35 KR",
     tags: ""
   },
   {
-    id: 3,
-    title: "Økologisk The",
-    price: "25,-",
-    tags: "Pukka: LemonGrass Ginger, Three Ginger, Supreme Matcha Green, Ginseng Matcha Green, Lemon Ginger & Manuka Honey"
-  },
-  {
-    id: 4,
     title: "Kande Med The",
-    price: "45,-",
+    price: "45 KR",
     tags: "Jasmin eller Oolong"
   }
 ];
 
-const coldBevarages = [
+const coldBeverages = [
+  {
+    title: "Postevand Gratis Refill",
+    price: "20 KR",
+    tags: ""
+  },
+  {
+    title: "Vietnamesisk Iskaffe",
+    price: "55 KR",
+    tags: ""
+  },
+  {
+    title: "Avocado Smoothie",
+    price: "55 KR",
+    tags: ""
+  },
+  {
+    title: "Tins Lemonade",
+    price: "55 KR",
+    tags: ""
+  },
+  {
+    title: "Matcha Iced Latte",
+    price: "55 KR",
+    tags: ""
+  }
+];
+
+const wineMenu = [
   {
     id: 1,
-    title: "Postevand Gratis Refill",
-    price: "29,-",
-    tags: ""
+    title: "Cava",
+    price: "69/195 KR",
+    tags: "Semi-Seco, Mousserende"
   },
   {
     id: 2,
-    title: "Vietnamesisk Iskaffe",
-    price: "55,-",
-    tags: ""
+    title: "Andantino",
+    price: "69/195 KR",
+    tags: "Garganega, Italien, Hvidvin"
   },
   {
     id: 3,
-    title: "Avocado Smoothie",
-    price: "55,-",
-    tags: ""
+    title: "Fosche",
+    price: "255 KR",
+    tags: "Chardonnay, Piemonte, Hvidvin"
   },
   {
     id: 4,
-    title: "Tins Lemonade",
-    price: "55,-",
-    tags: ""
+    title: "Eimermann",
+    price: "245 KR",
+    tags: "Riesling, Tyskland, Hvidvin"
   },
   {
     id: 5,
-    title: "Tins Iste",
-    price: "55,-",
-    tags: ""
+    title: "Sancerre",
+    price: "395 KR",
+    tags: "Sancerre, Frankrig, Hvidvin"
   },
   {
     id: 6,
-    title: "Friskpresset Appelsinjuice",
-    price: "55,-",
-    tags: ""
+    title: "Andantino",
+    price: "69/195 KR",
+    tags: "Sangiovese, Italien, Rødvin"
+  },
+  {
+    id: 7,
+    title: "Light Horse",
+    price: "295 KR",
+    tags: "Pinot Noir, USA, Rødvin"
+  },
+  {
+    id: 8,
+    title: "Valpolicella",
+    price: "245 KR",
+    tags: "Italien, Rødvin"
+  },
+  {
+    id: 9,
+    title: "Amarone",
+    price: "555 KR",
+    tags: "Amarone, Italien, Rødvin"
   }
 ];
 
 const SpecialMenu = () => (
   <>
-
-
     <div className="app__specialMenu flex__center section__padding" id="menu">
       <div className="app__specialMenu-title">
-        <SubHeading title="Frokost menu" />
-        <h1 className="headtext__cormorant">En lækker & let frokost</h1>
+        <h1 className="headtext__cormorant">Snacks</h1>
       </div>
-
       <div className="app__specialMenu-menu">
-        <div className="app__specialMenu-menu_wine  flex__center">
+        <div className="app__specialMenu-menu_wine flex__center">
           <div className="app__specialMenu_menu_items">
             {lunchMenu.map((lunchMenu, index) => (
               <MenuItem
@@ -391,17 +358,12 @@ const SpecialMenu = () => (
       </div>
     </div>
 
-
-
     <div className="app__specialMenu flex__center section__padding" id="menu">
       <div className="app__specialMenu-title">
-        <SubHeading title="Aften menu" />
-        <h1 className="headtext__cormorant">Kulinarisk oplevelse</h1>
+        <h1 className="headtext__cormorant">Forretter</h1>
       </div>
-
       <div className="app__specialMenu-menu">
-        <div className="app__specialMenu-menu_wine  flex__center">
-          <p className="app__specialMenu-menu_heading">Foretter / Salater</p>
+        <div className="app__specialMenu-menu_wine flex__center">
           <div className="app__specialMenu_menu_items">
             {dinnerStartersMenu.map((dinnerStarterMenu, index) => (
               <MenuItem
@@ -413,13 +375,15 @@ const SpecialMenu = () => (
             ))}
           </div>
         </div>
+      </div>
+    </div>
 
-        <div className="app__specialMenu-menu_img">
-          <img src={ImageFoodNumberFour} alt="menu__img" />
-        </div>
-
-        <div className="app__specialMenu-menu_cocktails  flex__center">
-          <p className="app__specialMenu-menu_heading">Hovedretter / Desert</p>
+    <div className="app__specialMenu flex__center section__padding" id="menu">
+      <div className="app__specialMenu-title">
+        <h1 className="headtext__cormorant">Hovedretter & Desert</h1>
+      </div>
+      <div className="app__specialMenu-menu">
+        <div className="app__specialMenu-menu_wine flex__center">
           <div className="app__specialMenu_menu_items">
             {dinnerMainCourseMenu.map((dinnerMainCourse, index) => (
               <MenuItem
@@ -436,32 +400,50 @@ const SpecialMenu = () => (
 
     <div className="app__specialMenu flex__center section__padding" id="menu">
       <div className="app__specialMenu-title">
-        <SubHeading title="Et udvalg af drikke" />
-        <h1 className="headtext__cormorant">Menuen der slukker tørsten</h1>
+        <h1 className="headtext__cormorant">Læskedrikke</h1>
       </div>
-
       <div className="app__specialMenu-menu">
-        <div className="app__specialMenu-menu_wine  flex__center">
-          <p className="app__specialMenu-menu_heading">Læskedrikke</p>
+        <div className="app__specialMenu-menu_wine flex__center">
           <div className="app__specialMenu_menu_items">
-            {softDrinks.map((softDrinks, index) => (
+            {softDrinks.map((softDrink, index) => (
               <MenuItem
                 key={index}
-                title={softDrinks.title}
-                price={softDrinks.price}
-                tags={softDrinks.tags}
+                title={softDrink.title}
+                price={softDrink.price}
+                tags={softDrink.tags}
               />
             ))}
           </div>
         </div>
+      </div>
+    </div>
 
-        <div className="app__specialMenu-menu_img">
-          <img src={ImageShaker} alt="menu__img" />
+    <div className="app__specialMenu flex__center section__padding" id="menu">
+      <div className="app__specialMenu-title">
+        <h1 className="headtext__cormorant">Vin</h1>
+      </div>
+      <div className="app__specialMenu-menu">
+        <div className="app__specialMenu-menu_wine flex__center">
+          <div className="app__specialMenu_menu_items">
+            {wineMenu.map((wine, index) => (
+              <MenuItem
+                key={index}
+                title={wine.title}
+                price={wine.price}
+                tags={wine.tags}
+              />
+            ))}
+          </div>
         </div>
+      </div>
+    </div>
 
-        <div className="app__specialMenu-menu_cocktails  flex__center">
-          <p className="app__specialMenu-menu_heading">Cocktails</p>
-          <p className='app__specialMenu-menu_heading'>To for 165,-</p>
+    <div className="app__specialMenu flex__center section__padding" id="menu">
+      <div className="app__specialMenu-title">
+        <h1 className="headtext__cormorant">Cocktails</h1>
+      </div>
+      <div className="app__specialMenu-menu">
+        <div className="app__specialMenu-menu_wine flex__center">
           <div className="app__specialMenu_menu_items">
             {cocktails.map((cocktail, index) => (
               <MenuItem
@@ -477,34 +459,18 @@ const SpecialMenu = () => (
     </div>
 
     <div className="app__specialMenu flex__center section__padding" id="menu">
+      <div className="app__specialMenu-title">
+        <h1 className="headtext__cormorant">Varme Drikke</h1>
+      </div>
       <div className="app__specialMenu-menu">
-        <div className="app__specialMenu-menu_wine  flex__center">
-          <p className="app__specialMenu-menu_heading">Varme Drikke</p>
+        <div className="app__specialMenu-menu_wine flex__center">
           <div className="app__specialMenu_menu_items">
-            {hotBevarages.map((hotBevarages, index) => (
+            {hotBeverages.map((hotBevarage, index) => (
               <MenuItem
                 key={index}
-                title={hotBevarages.title}
-                price={hotBevarages.price}
-                tags={hotBevarages.tags}
-              />
-            ))}
-          </div>
-        </div>
-
-        <div className="app__specialMenu-menu_img">
-          <img src={ImageTea} alt="menu__img" />
-        </div>
-
-        <div className="app__specialMenu-menu_cocktails  flex__center">
-          <p className="app__specialMenu-menu_heading">Kolde Drikke</p>
-          <div className="app__specialMenu_menu_items">
-            {coldBevarages.map((coldBevarages, index) => (
-              <MenuItem
-                key={index}
-                title={coldBevarages.title}
-                price={coldBevarages.price}
-                tags={coldBevarages.tags}
+                title={hotBevarage.title}
+                price={hotBevarage.price}
+                tags={hotBevarage.tags}
               />
             ))}
           </div>
@@ -512,6 +478,25 @@ const SpecialMenu = () => (
       </div>
     </div>
 
+    <div className="app__specialMenu flex__center section__padding" id="menu">
+      <div className="app__specialMenu-title">
+        <h1 className="headtext__cormorant">Kolde Drikke</h1>
+      </div>
+      <div className="app__specialMenu-menu">
+        <div className="app__specialMenu-menu_wine flex__center">
+          <div className="app__specialMenu_menu_items">
+            {coldBeverages.map((coldBevarage, index) => (
+              <MenuItem
+                key={index}
+                title={coldBevarage.title}
+                price={coldBevarage.price}
+                tags={coldBevarage.tags}
+              />
+            ))}
+          </div>
+        </div>
+      </div>
+    </div>
   </>
 );
 
