@@ -8,42 +8,42 @@ import { SubHeading, MenuItem } from '../../components';
 const cocktails = [
   {
     title: 'Passion Rum',
-    price: '89,-',
+    price: '89 KR',
     tags: 'Passion | Lime | Mynte | Rom',
   },
   {
     title: "Berry Bomb",
-    price: '89,-',
+    price: '89 KR',
     tags: 'Lime | Bær | Rom | Danskvand',
   },
   {
     title: 'Moscoc Mule med et twist',
-    price: '89,-',
+    price: '89 KR',
     tags: 'Lime | Citrongræs sirup | Gingerbeer',
   },
   {
     title: 'Pink Lychee',
-    price: '89,-',
+    price: '89 KR',
     tags: 'Vodka | Æggehvide | Litchi Sirup | Tranebær | Ananas',
   },
   {
     title: 'Frozen Daiquiri',
-    price: '89,-',
+    price: '89 KR',
     tags: 'Passion | Lime / Jordbær',
   },
   {
     title: 'Whiskey Sour',
-    price: '89,-',
+    price: '89 KR',
     tags: 'Æggehvide | Citron | Whiskey',
   },
   {
     title: 'Gin-Jito',
-    price: '89,-',
+    price: '89 KR',
     tags: 'Lime | Thai Basilikum | Gingerbeer',
   },
   {
     title: "Saigon Sweet'n sour",
-    price: '89,-',
+    price: '89 KR',
     tags: 'Gin | Lime | Mynte | Kumquat',
   }
 ];
@@ -52,55 +52,55 @@ const softDrinks = [
   {
     id: 1,
     title: "Coca Cola/Pepsi Max/Faxe Kondi",
-    price: "35,-",
+    price: "35 KR",
     tags: "25cl"
   },
   {
     id: 2,
     title: "Økologisk Saft",
-    price: "42,-",
+    price: "42 KR",
     tags: "Hyldblomst el. Ingefær/Citron, 25 cl"
   },
   {
     id: 3,
     title: "Galvanina Bio-Sodavand",
-    price: "48,-",
+    price: "48 KR",
     tags: "Pink Grape, Mandarin, Ginger Beer, Danskvand, 35 cl"
   },
   {
     id: 4,
     title: "Galvanina Danskvand",
-    price: "65,-",
+    price: "65 KR",
     tags: "75 cl"
   },
   {
     id: 5,
     title: "Asiatisk Øl",
-    price: "52,-",
+    price: "52 KR",
     tags: "Saigon el. Tiger, 33 cl"
   },
   {
     id: 6,
     title: "Pift Øl",
-    price: "52,-",
+    price: "52 KR",
     tags: "Citrus el. Mango, 50 cl"
   },
   {
     id: 7,
     title: "Kissmeyer Øl",
-    price: "55,-",
+    price: "55 KR",
     tags: "Pale Ale, 33 cl"
   },
   {
     id: 8,
     title: "Anarkist Øl",
-    price: "72,-",
+    price: "72 KR",
     tags: "Bloody Weizen, New England IPA, Dobbelt IPA, 50 cl"
   },
   {
     id: 9,
     title: "Alkoholfri Heineken",
-    price: "39,-",
+    price: "39 KR",
     tags: "33 cl"
   }
 
@@ -110,94 +110,88 @@ const dinnerStartersMenu = [
   {
     id: 1,
     title: "Bao",
-    tags: "Dampet hvedebolle med marineret svinekød, agurk, sylte og koriander.",
-    price: "49,-"
+    tags: "Dampet bolle med marineret svinekød, agurk, syltet grøntsager og koriander.",
+    price: "55 KR"
   },
   {
     id: 2,
-    title: "Chả Giò",
-    tags: "Tre hjemmelavede stegte forårsruller med svinekød og sursød sauce. (Kan fås som vegetar. Indeholder laktose.)",
-    price: "65,-"
+    title: "GỎI CUỐN",
+    tags: "to friske ruller med salat, urter og rejer, svinekød eller oksekød. Serveres med HOISINsovs (kan fås som vegetar OG GLUTENFRI).",
+    price: "65 KR"
   },
   {
     id: 3,
-    title: "Tôm Lăn Bột",
-    tags: "Indbagte rejer m. chili mayo.",
-    price: "69,-"
+    title: "Bánh Xèo",
+    tags: "rispandekage med rejer, svinekød, salat og friske urter. Serveres med fiskesovs (GLUTENFRI. kan fås som vegetar).",
+    price: "89 KR"
   },
   {
     id: 4,
-    title: "Hoành Thánh Chiên",
-    tags: "Stegte wonton med rejer og kylling. Serveret med satay sauce.",
-    price: "69,-"
+    title: "Gyoza",
+    tags: "4 stk pandestegte gyosa. Serveres med ponzu og ingefærsoya. ",
+    price: "75 KR"
   },
   {
     id: 5,
     title: "Gỏi Cuốn",
     tags: "Tre friske ruller med salat, urter og rejer, svinekød eller oksekød. Serveres med hoisinsaus (Kan fås som vegetar og glutenfri).",
-    price: "75,-"
+    price: "75 KR"
   },
-  {
-    id: 6,
-    title: "Bánh Xèo",
-    tags: "Rispandekage med rejer, svinekød, salat og friske urter. Serveres med fisksaus. (Glutenfri. Kan fås som vegetar)",
-    price: "89,-"
-  }
 ];
 
 const dinnerMainCourseMenu = [
   {
     id: 1,
     title: "Phở Bò",
-    price: "109,-",
+    price: "109 KR",
     tags: "Oksekødsuppe med kødboller og blancheret kød. Serveres med friske urter.",
   },
   {
     id: 2,
     title: "Bún Bò Huế",
-    price: "109,-",
+    price: "109 KR",
     tags: "Spicy nudelsuppe med oksekød og friske urter.",
   },
   {
     id: 3,
     title: "Bún Thịt Nướng Chả Giò",
-    price: "109,-",
+    price: "109 KR",
     tags: "Friske nudler med svinekød og forårsruller. (Kan fås som vegetar)",
   },
   {
     id: 4,
     title: "Cơm Tấm",
-    price: "109,-",
+    price: "109 KR",
     tags: "Grillet svinekød med ris og vietnamesisk æggekage.",
   },
   {
     id: 5,
     title: "Phở Xào Chay",
-    price: "109,-",
+    price: "109 KR",
     tags: "Stegte nudler med grøntsager, svampe og tofu.",
   },
   {
     id: 6,
     title: "Dagens Bowl",
     tags: "Spørg tjeneren for at høre om indholdet i dagens bowl.",
-    price: "119,-"
+    price: "119 KR"
   },
   {
     id: 7,
     title: "Delt Måltid",
-    price: "159,- pr. person",
+    price: "159 KR pr. person",
     tags: "Vietnamesisk måltid sammensat af ugens råvarer. Minimum to personer. Spørg tjeneren for dagens deling.",
   },
   {
     id: 8,
     title: "Dagens Dessert",
-    price: "59,-",
+    price: "59 KR",
     tags: "Spørg tjeneren, hvad dagens dessert består af.",
   },
   {
     id: 9,
     title: "Side Orders",
-    price: "32,-",
+    price: "32 KR",
     tags: "Vietnamesisk Kimchi - 32 KR. / Stegt Grønt - 39 KR. / Ekstra Kød - 15 KR.",
   }
 ];
@@ -206,58 +200,64 @@ const lunchMenu = [
   {
     id: 1,
     title: "Chả Giò",
-    price: "65,-",
+    price: "65 KR",
     tags: "Tre hjemmelavede stegte forårsruller med svinekød og sursød sauce. (Kan fås som vegetar. Indeholder laktose)."
   },
   {
     id: 2,
     title: "Tôm Lăn Bột",
-    price: "75,-",
+    price: "75 KR",
     tags: "Indbagte rejer m. chili mayo."
   },
   {
     id: 3,
     title: "Hoành Thánh Chiên",
-    price: "75,-",
+    price: "75 KR",
     tags: "Fire hjemmelavede wonton med rejer kylling og satay sauce."
   },
   {
     id: 4,
     title: "Bánh Phồng Tôm",
-    price: "25,-",
+    price: "25 KR",
     tags: "Rejechips."
   },
   {
     id: 5,
     title: "Khoai Lang Chiên",
-    price: "55,-",
+    price: "55 KR",
     tags: "Pomfritter af sødekartoffel med urtemayo."
   },
+  {
+    id: 6,
+    title: "Rejetoast.",
+    price: "65 KR",
+    tags: "Med chilimayo."
+  }
 ];
 
 const hotBevarages = [
   {
     id: 1,
     title: "Sort Kaffe",
-    price: "30,-",
+    price: "30 KR",
     tags: "Ved refill: +15 KR"
   },
   {
     id: 2,
     title: "Kaffe Latte/Cappuccino",
-    price: "35,-",
+    price: "35 KR",
     tags: ""
   },
   {
     id: 3,
     title: "Økologisk The",
-    price: "25,-",
+    price: "25 KR",
     tags: "Pukka: LemonGrass Ginger, Three Ginger, Supreme Matcha Green, Ginseng Matcha Green, Lemon Ginger & Manuka Honey"
   },
   {
     id: 4,
     title: "Kande Med The",
-    price: "45,-",
+    price: "45 KR",
     tags: "Jasmin eller Oolong"
   }
 ];
@@ -266,37 +266,37 @@ const coldBevarages = [
   {
     id: 1,
     title: "Postevand Gratis Refill",
-    price: "29,-",
+    price: "29 KR",
     tags: ""
   },
   {
     id: 2,
     title: "Vietnamesisk Iskaffe",
-    price: "55,-",
+    price: "55 KR",
     tags: ""
   },
   {
     id: 3,
     title: "Avocado Smoothie",
-    price: "55,-",
+    price: "55 KR",
     tags: ""
   },
   {
     id: 4,
     title: "Tins Lemonade",
-    price: "55,-",
+    price: "55 KR",
     tags: ""
   },
   {
     id: 5,
     title: "Tins Iste",
-    price: "55,-",
+    price: "55 KR",
     tags: ""
   },
   {
     id: 6,
     title: "Friskpresset Appelsinjuice",
-    price: "55,-",
+    price: "55 KR",
     tags: ""
   }
 ];
@@ -396,7 +396,7 @@ const SpecialMenu = () => (
 
         <div className="app__specialMenu-menu_cocktails  flex__center">
           <p className="app__specialMenu-menu_heading">Cocktails</p>
-          <p className='app__specialMenu-menu_heading'>To for 165,-</p>
+          <p className='app__specialMenu-menu_heading'>To for 165 KR</p>
           <div className="app__specialMenu_menu_items">
             {cocktails.map((cocktail, index) => (
               <MenuItem
