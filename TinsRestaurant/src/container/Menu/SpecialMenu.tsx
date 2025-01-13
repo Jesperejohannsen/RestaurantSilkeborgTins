@@ -48,64 +48,6 @@ const cocktails = [
   }
 ];
 
-// const wineMenu = [
-//   {
-//     title: 'Cava - Dom Potier, Demi-Sec',
-//     price: '195,-',
-//     tags: 'Mousserende, Spanien'
-//   },
-//   {
-//     title: 'He Pinot Gris',
-//     price: '69/235,-',
-//     tags: 'Hvidvin, Alsace, Frankrig'
-//   },
-//   {
-//     title: 'Riesling',
-//     price: '235,-',
-//     tags: 'Hvidvin, Domaine Spielmann, Alsace, Frankrig, 2020'
-//   },
-//   {
-//     title: 'Rata Road',
-//     price: '235,-',
-//     tags: 'Hvidvin, Sauvignon Blanc, 2020, New Zealand'
-//   },
-//   {
-//     title: 'Chardonnay',
-//     price: '69/235,-',
-//     tags: 'Hvidvin, Orby, Frankrig'
-//   },
-//   {
-//     title: 'Syrah-Grenache',
-//     price: '255,-',
-//     tags: 'Rødvin, Orby, Frankrig'
-//   },
-//   {
-//     title: 'Cabernet-Syrah',
-//     price: '255,-',
-//     tags: 'Rødvin, Orby, Frankrig'
-//   },
-//   {
-//     title: 'Merlot',
-//     price: '69/235,-',
-//     tags: 'Rødvin, Chateau Castagnac, Bordeaux, Frankrig, 2019'
-//   },
-//   {
-//     title: 'Shiraz',
-//     price: '255,-',
-//     tags: 'Rødvin, First Drop, Australien, 2016'
-//   },
-//   {
-//     title: 'Rosé d’Anjou',
-//     price: '69/225,-',
-//     tags: 'Rosé, Frankrig'
-//   },
-//   {
-//     title: 'Rosé Gris de La Dune',
-//     price: '235,-',
-//     tags: 'Rosé, Frankrig'
-//   }
-// ];
-
 const softDrinks = [
   {
     id: 1,
@@ -263,40 +205,34 @@ const dinnerMainCourseMenu = [
 const lunchMenu = [
   {
     id: 1,
-    title: "Bánh Mì",
-    price: "59,-",
-    tags: "Vælg mellem spælæg, marineret svinekød eller oksekød"
+    title: "Chả Giò",
+    price: "65,-",
+    tags: "Tre hjemmelavede stegte forårsruller med svinekød og sursød sauce. (Kan fås som vegetar. Indeholder laktose)."
   },
   {
     id: 2,
-    title: "Bao Bun",
-    price: "40,-",
-    tags: "Dampede bao bun med marineret svinekød"
+    title: "Tôm Lăn Bột",
+    price: "75,-",
+    tags: "Indbagte rejer m. chili mayo."
   },
   {
     id: 3,
-    title: "Gỏi Gà",
-    price: "80,-",
-    tags: "Kylling, kål, gulerødder, krydderurter"
+    title: "Hoành Thánh Chiên",
+    price: "75,-",
+    tags: "Fire hjemmelavede wonton med rejer kylling og satay sauce."
   },
   {
     id: 4,
-    title: "Stegte Ris",
-    price: "85,-",
-    tags: "Stegte ris med grøntsager og rejer"
+    title: "Bánh Phồng Tôm",
+    price: "25,-",
+    tags: "Rejechips."
   },
   {
     id: 5,
-    title: "Ris med Omelet",
-    price: "85,-",
-    tags: "Omelet med rejer og grøntsager, serveres med let grønt og soya"
+    title: "Khoai Lang Chiên",
+    price: "55,-",
+    tags: "Pomfritter af sødekartoffel med urtemayo."
   },
-  {
-    id: 6,
-    title: "Tins Frokosttallerken",
-    price: "99,-",
-    tags: "Med æg, paté, oksekød, pølse og sylte, serveres med brød"
-  }
 ];
 
 const hotBevarages = [
@@ -371,8 +307,7 @@ const SpecialMenu = () => (
 
     <div className="app__specialMenu flex__center section__padding" id="menu">
       <div className="app__specialMenu-title">
-        <SubHeading title="Frokost menu" />
-        <h1 className="headtext__cormorant">En lækker & let frokost</h1>
+        <h1 className="headtext__cormorant">Snacks</h1>
       </div>
 
       <div className="app__specialMenu-menu">
