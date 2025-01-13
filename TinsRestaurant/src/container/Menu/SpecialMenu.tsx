@@ -109,31 +109,31 @@ const softDrinks = [
 const dinnerStartersMenu = [
   {
     id: 1,
-    title: "Bao",
+    title: "BAO",
     tags: "Dampet bolle med marineret svinekød, agurk, syltet grøntsager og koriander.",
     price: "55 KR"
   },
   {
     id: 2,
     title: "GỎI CUỐN",
-    tags: "to friske ruller med salat, urter og rejer, svinekød eller oksekød. Serveres med HOISINsovs (kan fås som vegetar OG GLUTENFRI).",
+    tags: "To friske ruller med salat, urter og rejer, svinekød eller oksekød. Serveres med hoisinsovs (Kan fås som vegetar og glutenfri).",
     price: "65 KR"
   },
   {
     id: 3,
-    title: "Bánh Xèo",
-    tags: "rispandekage med rejer, svinekød, salat og friske urter. Serveres med fiskesovs (GLUTENFRI. kan fås som vegetar).",
+    title: "BÁNH XÈO",
+    tags: "Rispandekage med rejer, svinekød, salat og friske urter. Serveres med fiskesovs (Glutenfri. Kan fås som vegetar).",
     price: "89 KR"
   },
   {
     id: 4,
-    title: "Gyoza",
-    tags: "4 stk pandestegte gyosa. Serveres med ponzu og ingefærsoya. ",
+    title: "GYOZA",
+    tags: "4 stk pandestegte gyoza. Serveres med ponzu og ingefærsoya.",
     price: "75 KR"
   },
   {
     id: 5,
-    title: "Gỏi Cuốn",
+    title: "GỎI CUỐN",
     tags: "Tre friske ruller med salat, urter og rejer, svinekød eller oksekød. Serveres med hoisinsaus (Kan fås som vegetar og glutenfri).",
     price: "75 KR"
   },
@@ -142,94 +142,106 @@ const dinnerStartersMenu = [
 const dinnerMainCourseMenu = [
   {
     id: 1,
-    title: "Phở Bò",
-    price: "109 KR",
-    tags: "Oksekødsuppe med kødboller og blancheret kød. Serveres med friske urter.",
+    title: "UGENS SALAT",
+    price: "135 KR",
+    tags: "Hør tjeneren for indholdet i ugens salat. (Kan fås som glutenfri).",
   },
   {
     id: 2,
-    title: "Bún Bò Huế",
-    price: "109 KR",
-    tags: "Spicy nudelsuppe med oksekød og friske urter.",
+    title: "PHỞ BÒ",
+    price: "135 KR",
+    tags: "Oksekødsuppe med risnudler, kødboller og blancheret kød. Serveres med friske urter (Kan fås som glutenfri).",
   },
   {
     id: 3,
-    title: "Bún Thịt Nướng Chả Giò",
-    price: "109 KR",
-    tags: "Friske nudler med svinekød og forårsruller. (Kan fås som vegetar)",
+    title: "BÚN BÒ HUẾ",
+    price: "135 KR",
+    tags: "Spicy nudelsuppe med okse- og svinekød samt friske urter. (Glutenfri).",
   },
   {
     id: 4,
-    title: "Cơm Tấm",
-    price: "109 KR",
-    tags: "Grillet svinekød med ris og vietnamesisk æggekage.",
+    title: "BÚN THỊT NƯỚNG CHẢ GIÒ",
+    price: "135 KR",
+    tags: "Friske nudler med stegte forårsruller og grillet svinekød eller stegt oksekød (Kan fås som vegetar. Indeholder laktose).",
   },
   {
     id: 5,
-    title: "Phở Xào Chay",
-    price: "109 KR",
-    tags: "Stegte nudler med grøntsager, svampe og tofu.",
+    title: "CƠM THỊT NƯỚNG",
+    price: "135 KR",
+    tags: "Grillet svinekød med ris, kimchi og spejlæg.",
   },
   {
     id: 6,
-    title: "Dagens Bowl",
-    tags: "Spørg tjeneren for at høre om indholdet i dagens bowl.",
-    price: "119 KR"
+    title: "PHỞ XÀO",
+    tags: "Stegte risnudler med forskellige grøntsager og svampe. Vælg mellem tofu, oksekød eller rejer.",
+    price: "135 KR"
   },
   {
     id: 7,
-    title: "Delt Måltid",
-    price: "159 KR pr. person",
-    tags: "Vietnamesisk måltid sammensat af ugens råvarer. Minimum to personer. Spørg tjeneren for dagens deling.",
+    title: "BOWL",
+    price: "139 KR",
+    tags: "Spørg tjeneren for at høre om indholdet i dagens bowl. (Kan fås som glutenfri).",
   },
   {
     id: 8,
-    title: "Dagens Dessert",
-    price: "59 KR",
-    tags: "Spørg tjeneren, hvad dagens dessert består af.",
+    title: "VEGETAR BOWL",
+    price: "139 KR",
+    tags: "Spørg tjeneren for indholdet i ugens vegetarret.",
   },
   {
     id: 9,
-    title: "Side Orders",
-    price: "32 KR",
-    tags: "Vietnamesisk Kimchi - 32 KR. / Stegt Grønt - 39 KR. / Ekstra Kød - 15 KR.",
+    title: "BØRNERET",
+    price: "85 KR",
+    tags: "Kyllinge karaage med pomfritter af søde kartofler og mayo.",
+  },
+  {
+    id: 10,
+    title: "DEL ET MÅLTID / 195 KR. PR. PERSON",
+    tags: "Vietnamesisk måltid sammensat af forskellige retter. Minimum to personer. Spørg tjeneren for dagens deling. Fås ikke som take-way.",
+    price: ""
+  },
+  {
+    id: 11,
+    title: "DESSERT",
+    tags: "Spørg tjeneren, hvad dagens dessert består af. Frit valg af kaffe +15 KR",
+    price: "69 KR"
   }
 ];
 
 const lunchMenu = [
   {
     id: 1,
-    title: "Chả Giò",
+    title: "CHẢ GIÒ",
     price: "65 KR",
     tags: "Tre hjemmelavede stegte forårsruller med svinekød og sursød sauce. (Kan fås som vegetar. Indeholder laktose)."
   },
   {
     id: 2,
-    title: "Tôm Lăn Bột",
+    title: "TÔM LĂN BỘT",
     price: "75 KR",
     tags: "Indbagte rejer m. chili mayo."
   },
   {
     id: 3,
-    title: "Hoành Thánh Chiên",
+    title: "HOÀNH THÁNH CHIÊN",
     price: "75 KR",
     tags: "Fire hjemmelavede wonton med rejer kylling og satay sauce."
   },
   {
     id: 4,
-    title: "Bánh Phồng Tôm",
+    title: "BÁNH PHỒNG TÔM",
     price: "25 KR",
     tags: "Rejechips."
   },
   {
     id: 5,
-    title: "Khoai Lang Chiên",
+    title: "KHOAI LANG CHIÊN",
     price: "55 KR",
     tags: "Pomfritter af sødekartoffel med urtemayo."
   },
   {
     id: 6,
-    title: "Rejetoast.",
+    title: "REJETOAST",
     price: "65 KR",
     tags: "Med chilimayo."
   }
