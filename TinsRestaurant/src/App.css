@@ -1,5 +1,5 @@
 .section__padding {
-  padding: 4rem 6rem;
+  padding: 6rem 8rem;
 }
 
 .flex__center {
@@ -20,8 +20,8 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-
   min-height: 100vh;
+  gap: 4rem;
 }
 
 .app__wrapper_info {
@@ -39,99 +39,142 @@
   display: flex;
   justify-content: center;
   align-items: center;
-
-  margin-left: 2rem;
 }
 
 .app__wrapper_img-reverse {
   justify-content: flex-start;
-  margin-right: 2rem;
 }
 
 .app__wrapper_img img {
-  width: 80%;
+  width: 85%;
+  border-radius: 8px;
+  box-shadow: 0 20px 60px rgba(220, 202, 135, 0.15);
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.app__wrapper_img img:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 30px 80px rgba(220, 202, 135, 0.25);
 }
 
 .custom__button {
-  background-color: var(--color-crimson);
+  background: linear-gradient(135deg, var(--color-golden) 0%, #c5b358 100%);
   color: var(--color-black);
   font-family: var(--font-base);
-  font-weight: 700;
-  letter-spacing: 0.04em;
+  font-weight: 600;
+  letter-spacing: 0.08em;
   line-height: 28px;
-  font-size: 16px;
-  padding: 0.5rem 1.5rem;
-  border-radius: 1px;
+  font-size: 15px;
+  padding: 1rem 2.5rem;
+  border-radius: 50px;
   border: none;
   outline: none;
   cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(220, 202, 135, 0.3);
+  text-transform: uppercase;
+}
+
+.custom__button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 25px rgba(220, 202, 135, 0.5);
+  background: linear-gradient(135deg, #e8d98b 0%, #dcca87 100%);
+}
+
+.custom__button:active {
+  transform: translateY(0);
 }
 
 .p__cormorant {
   font-family: var(--font-base);
   color: var(--color-white);
-  font-weight: 700;
-  letter-spacing: 0.04em;
-  font-feature-settings: 'tnum' on, 'lnum' on;
-  line-height: 29.9px;
-  font-size: 23px;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  line-height: 32px;
+  font-size: 24px;
 }
 
 .p__opensans {
   font-family: var(--font-alt);
-  color: var(--color-white);
+  color: #d4d4d4;
   font-weight: 400;
-  letter-spacing: 0.04em;
-  line-height: 28px;
-  font-size: 16px;
+  letter-spacing: 0.02em;
+  line-height: 32px;
+  font-size: 17px;
 }
 
 .headtext__cormorant {
   font-family: var(--font-base);
   color: var(--color-golden);
-  font-size: 64px;
-  line-height: 83.2px;
-  letter-spacing: 0.04em;
+  font-size: 68px;
+  line-height: 88px;
+  letter-spacing: 0.03em;
+  font-weight: 700;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
 }
 
 .spoon__img {
-  width: 45px;
+  width: 50px;
+  opacity: 0.9;
 }
 
+/* Fade-in animation */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.fade-in {
+  animation: fadeInUp 0.8s ease-out;
+}
+
+/* Responsive Design */
 @media screen and (min-width: 2000px) {
 
   .custom__button,
   .p__cormorant {
-    font-size: 37px;
-    line-height: 67px;
+    font-size: 38px;
+    line-height: 70px;
   }
 
   .p__opensans {
-    font-size: 30px;
-    line-height: 50px;
+    font-size: 32px;
+    line-height: 54px;
   }
 
   .headtext__cormorant {
-    font-size: 150px;
-    line-height: 210px;
+    font-size: 160px;
+    line-height: 220px;
   }
 
   .spoon__img {
-    width: 80px;
+    width: 90px;
+  }
+
+  .section__padding {
+    padding: 8rem 12rem;
   }
 }
 
 @media screen and (max-width: 1150px) {
   .app__wrapper {
     flex-direction: column;
+    gap: 3rem;
   }
 
   .app__wrapper_img {
-    margin: 5rem 0 0 0;
+    margin: 3rem 0;
   }
 
   .app__wrapper_img-reverse {
-    margin: 0 0 5rem 0;
+    margin: 0 0 3rem 0;
   }
 
   .app__wrapper_img img {
@@ -141,7 +184,7 @@
 
 @media screen and (max-width: 850px) {
   .section__padding {
-    padding: 4rem;
+    padding: 4rem 3rem;
   }
 }
 
@@ -151,25 +194,38 @@
   }
 
   .p__cormorant {
-    font-size: 21px;
+    font-size: 22px;
+    line-height: 30px;
   }
 
   .p__opensans {
-    font-size: 14px;
+    font-size: 15px;
+    line-height: 28px;
+  }
+
+  .headtext__cormorant {
+    font-size: 48px;
+    line-height: 65px;
   }
 }
 
 @media screen and (max-width: 450px) {
   .p__opensans {
-    font-size: 12px;
+    font-size: 14px;
+    line-height: 26px;
   }
 
   .p__cormorant {
-    font-size: 19px;
+    font-size: 20px;
   }
 
   .headtext__cormorant {
-    font-size: 45px;
-    line-height: 70px;
+    font-size: 42px;
+    line-height: 58px;
+  }
+
+  .custom__button {
+    padding: 0.85rem 2rem;
+    font-size: 14px;
   }
 }
