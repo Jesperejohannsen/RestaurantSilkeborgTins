@@ -3,13 +3,23 @@
 :root {
   --font-base: 'Cormorant Upright', serif;
   --font-alt: 'Open Sans', sans-serif;
-  
-  --color-golden: #DCCA87;
-  --color-black: #0C0C0C;
+
+  /* Refined Color Palette */
+  --color-golden: #dcca87;
+  --color-golden-dark: #c5b358;
+  --color-black: #0a0a0a;
+  --color-dark-gray: #1a1a1a;
   --color-gray: #545454;
   --color-crimson: #F5EFDB;
-  --color-grey: #AAAAAA;
+  --color-grey: #b8b8b8;
   --color-white: #FFFFFF;
+  --color-accent: #8b7355;
+
+  /* Shadows */
+  --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.1);
+  --shadow-md: 0 4px 20px rgba(0, 0, 0, 0.15);
+  --shadow-lg: 0 10px 40px rgba(0, 0, 0, 0.2);
+  --shadow-golden: 0 8px 30px rgba(220, 202, 135, 0.3);
 }
 
 * {
@@ -19,34 +29,72 @@
   scroll-behavior: smooth;
 }
 
+body {
+  background-color: var(--color-black);
+  overflow-x: hidden;
+}
+
 a {
   color: unset;
   text-decoration: none;
+  transition: color 0.3s ease;
 }
 
+/* Smooth scroll animations */
 .slide-bottom {
   -webkit-animation: slide-bottom 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
-	animation: slide-bottom 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+  animation: slide-bottom 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
 }
 
 @-webkit-keyframes slide-bottom {
   0% {
     -webkit-transform: translateY(-25%);
-            transform: translateY(-25%);
+    transform: translateY(-25%);
   }
+
   100% {
     -webkit-transform: translateY(0);
-            transform: translateY(0);
+    transform: translateY(0);
   }
 }
 
 @keyframes slide-bottom {
   0% {
     -webkit-transform: translateY(-25%);
-            transform: translateY(-25%);
+    transform: translateY(-25%);
   }
+
   100% {
     -webkit-transform: translateY(0);
-            transform: translateY(0);
+    transform: translateY(0);
   }
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--color-dark-gray);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--color-golden);
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--color-golden-dark);
+}
+
+/* Selection styling */
+::selection {
+  background-color: var(--color-golden);
+  color: var(--color-black);
+}
+
+::-moz-selection {
+  background-color: var(--color-golden);
+  color: var(--color-black);
 }
