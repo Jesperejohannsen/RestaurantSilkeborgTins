@@ -1,17 +1,47 @@
 .app__specialMenu {
     flex-direction: column;
-    background: var(--color-black);
+    background: linear-gradient(180deg, rgba(10, 10, 10, 0.98) 0%, rgba(26, 26, 26, 0.95) 100%);
+    position: relative;
+}
+
+.app__specialMenu::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: radial-gradient(circle at 70% 30%, rgba(220, 202, 135, 0.05) 0%, transparent 60%);
+    pointer-events: none;
 }
 
 .app__specialMenu-title {
-    margin-bottom: 2rem;
+    margin-bottom: 3rem;
     text-align: center;
+    position: relative;
+}
+
+.app__specialMenu-title h1 {
+    background: linear-gradient(135deg, #dcca87 0%, #f4e4a8 50%, #dcca87 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.app__specialMenu-title::after {
+    content: '';
+    position: absolute;
+    bottom: -15px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100px;
+    height: 3px;
+    background: linear-gradient(90deg, transparent, var(--color-golden), transparent);
 }
 
 .app__specialMenu-menu {
     width: 100%;
-    margin: 2rem 0;
-
+    margin: 3rem 0;
     display: flex;
     justify-content: center;
     align-items: flex-start;
@@ -20,11 +50,13 @@
 
 .app__specialMenu-menu_heading {
     font-family: var(--font-base);
-    font-weight: 600;
-    font-size: 45px;
-    line-height: 58.5px;
-    letter-spacing: 0.04em;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 62px;
+    letter-spacing: 0.03em;
     color: var(--color-white);
+    margin-bottom: 2rem;
+    text-align: center;
 }
 
 .app__specialMenu-menu_wine,
@@ -35,13 +67,21 @@
 }
 
 .app__specialMenu-menu_img {
-    width: 410px;
-    margin: 0 2rem;
+    width: 420px;
+    margin: 0 3rem;
+    position: relative;
 }
 
 .app__specialMenu-menu_img img {
     width: 100%;
     height: auto;
+    border-radius: 12px;
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.4);
+    transition: transform 0.4s ease;
+}
+
+.app__specialMenu-menu_img:hover img {
+    transform: scale(1.03) rotate(1deg);
 }
 
 .app__specialMenu_menu_items {
@@ -50,15 +90,20 @@
     margin: 2rem 0;
     width: 100%;
     color: var(--color-white);
+    gap: 0.5rem;
 }
 
 @media screen and (min-width: 2000px) {
     .app__specialMenu-menu_img {
-        width: 650px;
+        width: 700px;
     }
 
     .app__specialMenu-menu_img img {
-        height: 920px;
+        height: 980px;
+    }
+
+    .app__specialMenu-menu_heading {
+        font-size: 58px;
     }
 }
 
@@ -77,10 +122,11 @@
 @media screen and (max-width: 650px) {
     .app__specialMenu-menu_img {
         width: 100%;
+        margin: 2rem 0;
     }
 
     .app__specialMenu-menu_heading {
-        font-size: 35px;
-        line-height: 48.5px;
+        font-size: 38px;
+        line-height: 52px;
     }
 }
