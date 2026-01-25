@@ -1,0 +1,259 @@
+.app__findus {
+    background: linear-gradient(135deg, rgba(10, 10, 10, 0.98) 0%, rgba(26, 26, 26, 0.95) 100%);
+    position: relative;
+    overflow: hidden;
+}
+
+.app__findus::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: radial-gradient(circle at 70% 50%, rgba(220, 202, 135, 0.08) 0%, transparent 60%);
+    pointer-events: none;
+}
+
+.app__findus .app__wrapper_info {
+    z-index: 2;
+    position: relative;
+}
+
+.app__findus .app__wrapper-content {
+    margin-top: 2rem;
+    padding: 2.5rem;
+    background: rgba(220, 202, 135, 0.04);
+    border-radius: 12px;
+    border: 1px solid rgba(220, 202, 135, 0.12);
+    backdrop-filter: blur(10px);
+    transition: all 0.4s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.app__findus .app__wrapper-content::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 4px;
+    height: 100%;
+    background: linear-gradient(180deg, var(--color-golden), transparent);
+}
+
+.app__findus .app__wrapper-content:hover {
+    background: rgba(220, 202, 135, 0.07);
+    border-color: rgba(220, 202, 135, 0.2);
+    transform: translateY(-5px);
+    box-shadow: 0 15px 40px rgba(220, 202, 135, 0.15);
+}
+
+.app__findus .app__wrapper-content .p__opensans {
+    margin: 0.8rem 0;
+    font-size: 17px;
+    color: #d4d4d4;
+    transition: all 0.3s ease;
+    padding-left: 0.5rem;
+    position: relative;
+}
+
+.app__findus .app__wrapper-content .p__opensans:hover {
+    color: var(--color-white);
+    padding-left: 1rem;
+}
+
+/* Address styling */
+.app__findus .app__wrapper-content .p__opensans:nth-child(1),
+.app__findus .app__wrapper-content .p__opensans:nth-child(2) {
+    font-weight: 500;
+    font-size: 18px;
+    color: var(--color-white);
+}
+
+.app__findus .app__wrapper-content .p__opensans:nth-child(1)::before {
+    content: '📍';
+    margin-right: 0.8rem;
+    font-size: 20px;
+}
+
+/* Opening hours title */
+.app__findus .app__wrapper-content .p__cormorant {
+    color: var(--color-golden);
+    font-size: 26px;
+    font-weight: 600;
+    margin: 2.5rem 0 1.5rem 0;
+    letter-spacing: 0.05em;
+    background: linear-gradient(135deg, #dcca87 0%, #f4e4a8 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    position: relative;
+    padding-bottom: 1rem;
+}
+
+.app__findus .app__wrapper-content .p__cormorant::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 60px;
+    height: 2px;
+    background: linear-gradient(90deg, var(--color-golden), transparent);
+}
+
+/* Opening hours styling */
+.app__findus .app__wrapper-content .p__opensans:nth-child(n+4) {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.6rem 1rem;
+    margin: 0.4rem 0;
+    background: rgba(220, 202, 135, 0.02);
+    border-radius: 6px;
+    transition: all 0.3s ease;
+}
+
+.app__findus .app__wrapper-content .p__opensans:nth-child(n+4):hover {
+    background: rgba(220, 202, 135, 0.06);
+    padding-left: 1.3rem;
+}
+
+/* Closed days styling */
+.app__findus .app__wrapper-content .p__opensans:nth-child(4),
+.app__findus .app__wrapper-content .p__opensans:nth-child(10) {
+    color: #888;
+    font-style: italic;
+}
+
+/* Image styling */
+.app__findus .app__wrapper_img {
+    position: relative;
+    z-index: 2;
+}
+
+.app__findus .app__wrapper_img img {
+    border-radius: 12px;
+    box-shadow: 0 25px 60px rgba(0, 0, 0, 0.5);
+    border: 1px solid rgba(220, 202, 135, 0.1);
+    transition: all 0.4s ease;
+}
+
+.app__findus .app__wrapper_img:hover img {
+    transform: scale(1.02) translateY(-8px);
+    box-shadow: 0 35px 80px rgba(220, 202, 135, 0.25);
+    border-color: rgba(220, 202, 135, 0.2);
+}
+
+/* Decorative element */
+.app__findus .app__wrapper_img::after {
+    content: '';
+    position: absolute;
+    bottom: -20px;
+    right: -20px;
+    width: 150px;
+    height: 150px;
+    background: radial-gradient(circle, rgba(220, 202, 135, 0.15) 0%, transparent 70%);
+    border-radius: 50%;
+    z-index: -1;
+    pointer-events: none;
+}
+
+/* Heading styling */
+.app__findus .headtext__cormorant {
+    position: relative;
+    padding-bottom: 1rem;
+}
+
+.app__findus .headtext__cormorant::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 80px;
+    height: 4px;
+    background: linear-gradient(90deg, var(--color-golden), transparent);
+    border-radius: 2px;
+}
+
+/* Contact button (optional - if you want to add one) */
+.app__findus .contact__button {
+    margin-top: 2rem;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.8rem;
+    padding: 1rem 2.5rem;
+    background: linear-gradient(135deg, var(--color-golden) 0%, #c5b358 100%);
+    color: var(--color-black);
+    font-family: var(--font-base);
+    font-weight: 600;
+    font-size: 16px;
+    border-radius: 50px;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(220, 202, 135, 0.3);
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+}
+
+.app__findus .contact__button:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 25px rgba(220, 202, 135, 0.5);
+    background: linear-gradient(135deg, #e8d98b 0%, #dcca87 100%);
+}
+
+/* Responsive Design */
+@media screen and (min-width: 2000px) {
+    .app__findus .app__wrapper-content {
+        padding: 3.5rem;
+    }
+
+    .app__findus .app__wrapper-content .p__opensans {
+        font-size: 22px;
+    }
+
+    .app__findus .app__wrapper-content .p__cormorant {
+        font-size: 32px;
+    }
+}
+
+@media screen and (max-width: 1150px) {
+    .app__findus .app__wrapper {
+        flex-direction: column-reverse;
+    }
+
+    .app__findus .app__wrapper_img {
+        margin-bottom: 3rem;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    .app__findus .app__wrapper-content {
+        padding: 2rem 1.5rem;
+    }
+
+    .app__findus .app__wrapper-content .p__opensans {
+        font-size: 15px;
+    }
+
+    .app__findus .app__wrapper-content .p__cormorant {
+        font-size: 22px;
+    }
+
+    .app__findus .app__wrapper-content .p__opensans:nth-child(n+4) {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0.3rem;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .app__findus .app__wrapper-content {
+        padding: 1.5rem 1rem;
+    }
+
+    .app__findus .app__wrapper-content .p__opensans:nth-child(1)::before {
+        font-size: 16px;
+    }
+}
