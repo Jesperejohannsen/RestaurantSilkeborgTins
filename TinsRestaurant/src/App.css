@@ -118,7 +118,6 @@
   opacity: 0.9;
 }
 
-/* Fade-in animation */
 @keyframes fadeInUp {
   from {
     opacity: 0;
@@ -135,7 +134,6 @@
   animation: fadeInUp 0.8s ease-out;
 }
 
-/* Responsive Design */
 @media screen and (min-width: 2000px) {
 
   .custom__button,
