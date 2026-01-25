@@ -4,7 +4,6 @@
   --font-base: 'Cormorant Upright', serif;
   --font-alt: 'Open Sans', sans-serif;
 
-  /* Refined Color Palette */
   --color-golden: #dcca87;
   --color-golden-dark: #c5b358;
   --color-black: #0a0a0a;
@@ -15,7 +14,6 @@
   --color-white: #FFFFFF;
   --color-accent: #8b7355;
 
-  /* Shadows */
   --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.1);
   --shadow-md: 0 4px 20px rgba(0, 0, 0, 0.15);
   --shadow-lg: 0 10px 40px rgba(0, 0, 0, 0.2);
@@ -40,7 +38,6 @@ a {
   transition: color 0.3s ease;
 }
 
-/* Smooth scroll animations */
 .slide-bottom {
   -webkit-animation: slide-bottom 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
   animation: slide-bottom 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
@@ -70,7 +67,6 @@ a {
   }
 }
 
-/* Custom Scrollbar */
 ::-webkit-scrollbar {
   width: 10px;
 }
@@ -88,7 +84,6 @@ a {
   background: var(--color-golden-dark);
 }
 
-/* Selection styling */
 ::selection {
   background-color: var(--color-golden);
   color: var(--color-black);
